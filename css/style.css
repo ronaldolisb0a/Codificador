@@ -1,0 +1,218 @@
+*, footer {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 1.5;
+}
+body {
+    background: linear-gradient(#eff1fa, #e9ecf8, #609ed4);
+}
+header {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0 0 40px;
+}
+h1:hover {
+    transition: 0.2s;
+    opacity: 50%;
+}
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+textarea {
+    resize: none;
+}
+.input-texto {
+    margin-top: 85px;
+    margin-left: 15px;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 30px;
+    padding: 0.5rem;
+}
+.informacao {
+    margin-left: 15px;
+}
+.mensagens-erro li::before {
+    content: url(../img/exclamation.png);
+    width: 16px;
+    height: 17px;
+    vertical-align: middle;
+}
+.mensagens-erro li {
+    font-size: 20px;
+    margin-left: 25px;
+}
+.botoes {
+    display: flex;
+    flex-direction: row;
+    margin-top: 57px;
+    margin-left: 15px;
+}
+button {
+    width: 325px;
+    height: 60px;
+    border: 1px solid #0a3871;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 3px 5px 12px #356ea9;
+}
+button:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    opacity: 80%;
+}
+.btn-codificar {
+    background-color: #0a3871;
+    color: white;
+}
+.btn-decodificar {
+    margin-left: 30px;
+    background-color: #d8dfe8;
+    color: #0a3871;
+}
+.container {
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 30px;
+    padding: 2rem;
+    height: 40rem;
+    text-align: center;
+    box-shadow: 12px 18px 35px #356ea9;
+}
+.resultado {
+    position: relative;
+    border-color: transparent;
+    border-radius: 30px;
+    padding: 0.5rem;
+}
+.resultado:placeholder-shown {
+    background-image: url(../img/resultado-bg.png);
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.resultado:not(:placeholder-shown) {
+    background-color: white;
+}
+.invisivel {
+    display: none;
+}
+.btn-copiar {
+    background-color: white;
+    color: #0a3871;
+}
+footer {
+    text-align: center;
+    margin-top: 9rem;
+    margin-bottom: 3rem;
+}
+.redes {
+    display: inline;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.redes * {
+    vertical-align: middle;
+}
+.redes p {
+    margin-bottom: 15px;
+}
+.redes a {
+    margin: 5px 15px;
+    text-decoration: none;
+    color: white;
+}
+.redes a:hover {
+    transition: 0.5s;
+    opacity: 70%;
+    color: #0a3871;
+}
+.credito {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 820px) {
+    * {
+        font-size: 20px;
+    }
+    header {
+        display: block;
+        margin: 35px 0 0 25px;
+    }
+    .main {
+        display: inline;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .input-texto {
+        margin-top: 5rem;
+        max-width: 80%;
+        height: 20%;
+    }
+    .informacao {
+        margin: 0 auto;
+    }
+    .mensagens-erro li {
+        font-size: 18px;
+        margin: 0 auto;
+    }
+    .botoes {
+        display: inline;
+        margin: 15px auto;
+    }
+    button {
+        height: 50px;
+        font-weight: bold;
+    }
+    button:hover {
+        transition: 0.5;
+        transform: none;
+        opacity: 80%;
+    }
+    .btn-codificar, .btn-decodificar {
+        width: 60%;
+        margin: 15px auto;
+    }
+    .container {
+        margin: 20px auto;
+        width: 75%;
+        height: 30%;
+        padding: 1rem;
+    }
+    .resultado {
+        width: 90%;
+        height: 30%;
+    }
+    .resultado:placeholder-shown {
+        background-image: url(../img/resultado-bg-mw480.png);
+    }
+    .btn-copiar {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .invisivel {
+        display: none;
+    }
+    footer {
+        margin: 2rem auto;
+    }
+    .redes {
+        font-size: 16px;
+    }
+    .redes p {
+        margin-bottom: 10px;
+    }
+    .redes a {
+        margin: 5px;
+    }
+    .credito {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
